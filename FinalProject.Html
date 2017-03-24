@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Project</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Roboto+Condensed:700" rel="stylesheet">
+
+	<style type="text/css">
+		
+		
+
+		.overlay{
+			max-width: 100%;
+			width: 100%;
+			height: 810px;
+			background-color: rgba(0,0,0,.3);
+			position: absolute;
+			z-index: 1;
+		}
+
+
+		#homevideo{
+			max-width: 100%;
+			/*min-width: 100%;
+			min-height: 100%;*/
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			/*z-index: -1;*/
+			
+
+		}
+
+		#level{
+			color: white;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 100pt;
+			letter-spacing: 40px;
+			position: absolute;
+			margin: 300px 0 0 35%;
+			/*z-index: 300;*/
+			background-attachment: fixed;
+			display: none;
+			z-index: 3;
+
+
+		}
+		#graphics{
+			color: white;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 20pt;
+			letter-spacing: 40px;
+			position: absolute;
+			margin: 450px 0 0 50%;
+			background-attachment: fixed;
+			display: none;
+			z-index: 3;
+		}
+
+
+
+		#fontbox1{
+			height: 350px;
+			width: 100%;
+			background-color: rgb(219, 92, 8);
+			text-align: center;
+			color: rgb(255, 255, 255);
+			font-family: 'Roboto Condensed', sans-serif;
+			padding: 50px 0 0 0;
+			display: none;
+			
+
+		}
+
+		#fontbox1 h2{
+			margin: 0;
+			font-size: 20pt;
+		}
+
+		p{
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 20pt;
+		}
+
+		.imagebox{
+			height: 500px;
+			width: 100%
+			background: url(faunascape01.jpg);
+			background-image: url(faunascape01.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			
+
+			
+		}
+
+		#fontbox2{
+			height: 350px;
+			width: 100%;
+			background-color: rgb(10, 116, 132);
+			text-align: center;
+			color: rgb(255, 255, 255);
+			font-family: 'Roboto Condensed', sans-serif;
+			padding: 50px 0 0 0;
+			
+		}
+
+		#fontbox2 h2{ 
+			font-size: 20pt;
+		}
+
+
+		.tablecontainer{
+			max-width: 100%;
+			width: 1000px;
+			height: 1300px;
+			
+			position: relative;
+			margin: 0 0 0 250px;
+			display: none;
+
+		}
+
+		.box{
+			position: relative;
+
+		} 
+		.boximage{
+			width: 100%;
+			height: 100%;
+		}
+
+		
+
+		table{
+			border-spacing: 20px;
+		}
+
+		td{
+			
+			height: 300px;
+			width: 600px;
+			margin: 10px;
+			
+		}
+
+		.fontbox3{
+			width: 100%;
+			height: 300px;
+			background-color: rgb(100, 39, 132);
+			font-family: 'Roboto Condensed', sans-serif;
+			color: rgba(255,255,255,1);
+			padding: 20px 0 0 0;
+
+		}
+
+		.pointdown:hover{
+			box-shadow: 1px 1px 10px 5px black;
+		}
+
+
+
+
+		
+		.navtext:hover{
+			color: red;
+			text-decoration: underline;
+			transition: 2s;
+		}
+
+		.boximage:hover{
+			opacity: .7;
+		}
+
+
+
+		.fashionText{
+			position: absolute;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 20pt;
+			color: white;
+			margin: 50px 0 0 50px;
+			z-index: 9999;
+
+		}
+		.nightLifeText{
+			position: absolute;
+			font-family: 'Roboto Condensed', sans-serif;
+			color: white;
+			margin: 280px 0 0 830px;
+			z-index: 9999;
+
+		}
+		.logoText{
+			position: absolute;
+			font-family: 'Roboto Condensed', sans-serif;
+			color: white;
+			margin: 400px 0 0 50px;
+			z-index: 9999;
+
+		}
+		.eventText{
+			position: absolute;
+			font-family: 'Roboto Condensed', sans-serif;
+			color: white;
+			margin: 615px 0 0 350px;
+			z-index: 9999;
+
+		}
+		.informationalText{
+			position: absolute;
+			font-family: 'Roboto Condensed', sans-serif;
+			color: white;
+			margin: 375px 0 0 525px;
+			z-index: 9999;
+
+		}
+		.holidayText{
+			position: absolute;
+			font-family: 'Roboto Condensed', sans-serif;
+			color: white;
+			margin: 940px 0 0 80px;
+			z-index: 9999;
+
+		}
+		.professionalText{
+			position: absolute;
+			font-family: 'Roboto Condensed', sans-serif;
+			font-size: 20pt;
+			color: white;
+			margin: 700px 0 0 820px;
+			z-index: 9999;
+
+		}
+
+
+		.fontbox4{
+			background-color: rgb(219, 92, 8);
+			width: 100%;
+			height: 300px;
+			text-align: center;
+			font-family: 'Roboto Condensed', sans-serif;
+			color: rgba(255,255,255,1);
+			padding: 20px 0 0 0;
+
+		}
+
+		.contactUs{
+			text-align: center;
+			border: solid;
+			border-radius: 50px;
+			text-decoration: none;
+			color: rgb(255,255,255);
+			padding: 20px;
+
+
+
+		}
+
+		.contactUs:hover{
+			box-shadow: 5px 5px 10px black;
+			color: rgb(219, 92, 8);
+			background-color: white;
+			border: none;
+		}
+
+		.aboutClick{
+			text-align: center;
+			border: solid;
+			border-radius: 50px;
+			text-decoration: none;
+			color: rgb(255,255,255);
+			padding: 20px;
+		}
+		.aboutClick:hover{
+			box-shadow: 5px 5px 10px black;
+			color: rgb(219, 92, 8);
+			background-color: white;
+			border: none;
+		}
+
+		#slides{
+			width: 100%;
+			height: 600px;
+			position: static;
+		}
+
+		.imageslide{
+			width: 100%;
+			height:600px;
+		}
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body id="HomePage">
+<header class="navbar">
+
+
+		
+	<nav class="navlinks">
+		<img class="logo" src="Level-image.png">
+		<div class="space" style="display: inline-block;"></div>
+		<a class="navtext" href="FinalProject.html" >Home</a>
+		<a class="navtext" href="#fontbox1">About</a>
+		<a class="navtext" href="#fontbox3">Work</a>
+		<a class="navtext" href="#fontbox4">Contact</a>
+	</nav>
+</header>
+
+
+<div class="videocontainer">
+
+	<h1 id="level">LEVEL</h1>
+	<h5 id="graphics">GRAPHICS</h5>
+	<div class="overlay"></div>
+
+	<video id="homevideo" autoplay="1" loop>
+		<source src="Background_Bokeh_01Videvo.mp4" type="video/mp4" ></video>
+</div>
+	
+
+<div id="fontbox1">
+	<h2>Redefining the word "design".</h2>
+	<br>
+	<p>Here at Level we believe that its more than just design. <br> We want to leave you with a feeling. We want to introduce <br> your world to the world </p>
+	<br>
+
+	<!-- click on this to get to aboutUs page -->
+	<a class="aboutClick" href="AboutUs.html">What are we about?</a>
+</div>
+<div class="imagebox">
+	
+</div>
+<!-- "fontbox2" is a placeholder to scroll down to it when the home link is clicked -->
+<div id="fontbox2">
+	<h2> Its time to kick it up a Knoch<h2>
+	<br>
+	<p>We're all about taking you to the next level. "Boring", is that even a word?<br> We promise to make your world live, visually captivating, and <br>a site to see.  </p>
+</div>
+
+<div id="slides">
+<!-- site source: https://s-media-cache-ak0.pinimg.com/originals/4f/e7/b9/4fe7b9c126da32f3100ff6431a26b5fe.jpg -->
+	<img class="imageslide" src="4fe7b9c126da32f3100ff6431a26b5fe.jpg">
+	<!-- site source: http://clipart-library.com/clipart/qcBozxLni.htm -->
+	<img class="imageslide" src="qcBozxLni.jpg">
+
+</div>
+<!-- "fontbox3" is a placeholder to scroll down to it when the home link is clicked -->
+<div id="fontbox3" class="fontbox3">
+	<center><h2>But I know you are tired of hearing the</h2>
+	<h2>the sweet stuff and what to see what were all </h2>
+	<h2>about, so follow me and lets get down to it.</h2>
+
+	<!-- image source: https://material.io/icons/
+	Pointer for clicking my work section down -->
+	<img class="pointdown" src="ic_keyboard_arrow_down_white_36dp_2x.png"></center>
+</div>
+
+<!-- container for my text that is over the images that link to my gallery of images -->
+<div class="tablecontainer">
+
+<div class="fashionText">Fashion Shows</div>
+<div Class="nightLifeText">Night Life</div>
+<div Class="logoText">Logos</div>
+<div Class="eventText">Events</div>
+<div Class="informationalText">Informationls</div>
+<div Class="holidayText">Holiday Inspired</div>
+<div Class="professionalText">Professional</div>
+
+<table>
+	<tr>
+		<td class="box" colspan="3">
+
+			<a href="FashionShow.html"><img class="boximage" src="table pic 1.jpg"></a>
+		</td>
+		
+		
+		<td class="box"><a href="Night Life.html"><img src="table pic 2.jpg" class="boximage"></a></td>
+	</tr>
+	<tr>
+		
+		<td class="box"><a href="logo.html"><img src="table pic 3.jpg" class="boximage"></a></td>
+		<td class="box"><a href="Event.html"><img src="table pic 4.jpg" class="boximage"></a></td>
+		<td class="box"><a href="Informational.html"><img src="table pic 5.jpg" class="boximage"></a></td>
+		<td style="display: none;"></td>
+	</tr>
+	<tr>
+		<td class="box"><a href="Holiday.html"><img src="table pic 7.jpg" class="boximage"></a></td>
+		<td class="box" colspan="3"><a href="Professional.html"><img class="boximage" src="table pic 8.jpg"></td>
+		
+	</tr>
+	
+</table>
+</div>
+
+<!-- "fontbox4" is a placeholder to scroll down to it when the home link is clicked -->
+<div id="fontbox4" class="fontbox4">
+	<h2>Fasinating wasn't it? Well if you like our stuff, Give us a Holler below</h2>
+	<br>
+	<br>
+	<center><a class="contactUs" href="Contact Us.html">Contact US</a></center>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" >
+
+// This link helped me with the scrolling, sliding, and fading effect: 
+// http://stackoverflow.com/questions/31247794/how-to-make-a-div-appear-and-disappear-on-scroll
+// https://www.w3schools.com/jquery/jquery_fade.asp
+	$(document).scroll(function() {
+     if ($(document).scrollTop() > 50) {
+         $('.navbar').slideDown();
+         
+   		}
+   		else{
+   			$('.navbar').slideUp()
+   		};
+
+   	if($(document).scrollTop() > 600){
+   		$('#fontbox1').slideDown(1000);
+   	}
+   	else{
+   		$('#fontbox1').slideUp()
+   	};
+
+   	
+});
+
+$(document).ready(function(){
+	setTimeout($('#level').fadeIn(4000), 6000);
+	setTimeout($('#graphics').slideDown(3000), 9000);
+
+$('.pointdown').click(function(){
+		$('.tablecontainer').slideDown('slow');
+});	
+
+
+	});
+// The slide show. site source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+var Index = 0;
+	changeSlide();
+
+function changeSlide() {
+    var i;
+    var x = document.getElementsByClassName("imageslide");
+    i = 0;
+    // this goes through my slide show and hides them
+    while (i < x.length) {
+      x[i].style.display = "none"; 
+      i++;
+    }
+    // This brings it to the front one by one
+    Index++;
+    if (Index > x.length) {Index = 1} 
+    x[Index-1].style.display = "block"; 
+    setTimeout(changeSlide, 5000); // image will switch every 5s
+}
+</script>
+</body>
+</html>
